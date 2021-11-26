@@ -32,7 +32,7 @@ type Rectangle = {
 
 type Shape = Square | Rectangle;
 
-function area(shape: Shape){
+function areaS(shape: Shape){
     if('size' in shape){
      return shape.size * shape.size;
     }
@@ -41,6 +41,6 @@ function area(shape: Shape){
     }
 }
 
-area({size: 2});
-area({width: 2, height: 4})
+areaS({size: 2});
+areaS({width: 2, height: 4})
 
